@@ -1,0 +1,92 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Helvetica, sans-serif, Arial;
+    width: 100%;
+    height: 100%;
+}
+header{
+    width: 100%;
+    height: 40px;
+    background-color: #212121;
+}
+h1{
+    color: white;
+    font-size: 1.2em;
+    margin-left: 90px;
+    padding: 9px;
+}
+footer{
+    width: 100%;
+    height: 80px;
+    background-color:#212121; ;
+    color: white;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+}
+.home, .contato, .sobre{
+    text-align: center;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 75px;
+    height: 25px;
+    color: white;
+    position: absolute;
+    top: 8px;
+    padding: 3px;    
+}
+.home{
+    right: 400px;
+    background-color: #F9A825;
+}
+.contato{
+    right: 300px;
+}
+.sobre{
+    right: 200px;
+}
+.contato:hover{
+    right: 300px;
+    background-color: red;
+}
+.sobre:hover{
+    right: 200px;
+    background-color: red;
+}
+.rodape{
+    position: absolute;    
+    margin-left: 50%;
+    margin-top: 35px;
+    font-size: 1,5em;
+}
+fieldset{
+    width: 450px;
+    height: 200px;
+    margin: 0 auto;
+    border: 1px solid black;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+form{
+    position: relative;
+    top: 100px;  
+}
+textarea{
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-right: 1px dotted gray;
+
+}
+#email{
+    position: relative;
+    top: -60px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
