@@ -1,92 +1,97 @@
-*{
-    border: 0;
+*{box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: helvetica;
+    border: none;
 }
-body{
-    font-family: Helvetica, sans-serif, Arial;
-    width: 100%;
-    height: 100%;
+/* Classes */
+.flex{
+    display: flex;
 }
+.btnHome{    
+    background-color: #F9A825;
+}
+.email{
+    width: 270px;
+    height: 25px;
+    margin-top: 80px;
+    padding-left: 20px;
+    justify-content: space-between;
+}
+.btnCor{
+    background-color: steelblue;
+}
+
+/* conteiner */
 header{
-    width: 100%;
+    width: 100vw;
     height: 40px;
     background-color: #212121;
 }
 h1{
     color: white;
-    font-size: 1.2em;
-    margin-left: 90px;
-    padding: 9px;
+    margin-left: 100px;
 }
+header > nav{    
+    margin: auto;
+    margin-inline-end: 0;
+}
+div.ajuste{
+    width: 200px;
+}
+header > nav{
+    text-align: center;
+    align-items: center;
+}
+header > nav > a{
+    text-decoration: none;
+    width: 150px;
+    height: 33px;
+    padding: 8px;
+    border-radius: 20px;
+    color: white;
+}
+header > nav > a:hover{
+    transition: 1s;
+    text-decoration: none;
+    width: 150px;
+    height: 33px;
+    padding: 8px;
+    border-radius: 20px;
+    background-color: red;
+}
+main{
+    width: 100%;
+    height: 100%;
+}
+fieldset{
+    width: 400px;
+    height: 190px;
+    margin-left: 30%;
+    margin-top: 100px;
+    border: none;
+}
+fieldset > form{
+    width: 100%;
+    height: 100%;  
+    padding: 10px;
+}
+input{  
+    border-radius: 50px;
+    border:1px solid black;
+} 
 footer{
     width: 100%;
     height: 80px;
-    background-color:#212121; ;
-    color: white;
-    margin: 0 auto;
-    position: absolute;
-    bottom: 0;
-}
-.home, .contato, .sobre{
+    background-color: #212121;
     text-align: center;
-    display: inline-block;
-    border: 1px solid black;
-    border-radius: 10px;
-    width: 75px;
-    height: 25px;
+    position: absolute; 
+    bottom:0;   
+}
+footer > p{
     color: white;
-    position: absolute;
-    top: 8px;
-    padding: 3px;    
+    margin:30px auto;
 }
-.home{
-    right: 400px;
-    background-color: #F9A825;
-}
-.contato{
-    right: 300px;
-}
-.sobre{
-    right: 200px;
-}
-.contato:hover{
-    right: 300px;
-    background-color: red;
-}
-.sobre:hover{
-    right: 200px;
-    background-color: red;
-}
-.rodape{
-    position: absolute;    
-    margin-left: 50%;
-    margin-top: 35px;
-    font-size: 1,5em;
-}
-fieldset{
-    width: 450px;
-    height: 200px;
-    margin: 0 auto;
-    border: 1px solid black;
-    border: 1px solid black;
-    border-radius: 50px;
-}
-form{
-    position: relative;
-    top: 100px;  
-}
-textarea{
-    text-align: center;
-    margin-top: 20px;
-    margin-left: 20px;
-    border-right: 1px dotted gray;
-
-}
-#email{
-    position: relative;
-    top: -60px;
-    border: 1px solid gray;
-    border-radius: 10px;
+#none{
+    border-right: 1px dotted black;
 }
