@@ -5,27 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
-    <title>Desafio número 1</title>
+    <title>Document</title>
 </head>
 <body>
-    <header>
-        <h1>LOGO</h1> 
-        <a href="#"><div  class="home">Home</div></a>
-        <a href="#"><div class="contato">Contato</div></a>
-        <a href="#"><div class= "sobre">Sobre</div></a>
+    <header class="flex">
+            <h1>LOGO</h1>
+       <nav class="flex">        
+            <a class="btnHome" href="#">Home </a>
+            <a href="#">Contato</a>
+            <a href="#">Sobre</a>        
+       </nav>
+       <!-- <div class="ajuste"></div> -->
     </header>
-    <main>
-        <form method="post">
-            <fieldset>
-                <legend></legend>
-                <textarea name="dados" required placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum laborum, alias sapiente odit illum perspiciatis maiores explicabo praesentium incidunt, rem fugiat error quibusdam ullam quia quae possimus animi laboriosam delectus!" cols="30" rows="10"></textarea>
-                <input id="email" type="texto" required placeholder="exemplo@exemplo.com" name="email">
-            </fieldset>
-        </form>
+    <main>        
+        <fieldset class="">
+            <form class="flex" method="post">
+                <textarea id="none" name="texto" cols="30" rows="10" placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quo fugiat quas impedit rem cupiditate recusandae deserunt fuga ab praesentium? Ut necessitatibus vel tempora autem debitis magni officiis omnis tenetur!"></textarea>
+                <div class="email ">
+                    <input type="email" id="email" required placeholder="exemp@exem.com">
+                    <input class="btnCor" type="submit" name="enviar" value="ENVIAR">
+                </div>
+            </form>
+        </fieldset>
+
     </main>
     <footer>
-       <span class="rodape">by TI - Academy</footer></span>
+        <p>by Ti - ACADEMY</p>
     </footer>
-    
 </body>
 </html>
